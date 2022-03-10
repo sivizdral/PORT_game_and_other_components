@@ -1,0 +1,103 @@
+|DOMACI2
+HEX0_0 <= SevenSegmentInterfaceDEC:inst10.a
+CLK => RisingEdge:inst3.clk
+CLK => RisingEdge:inst4.clk
+CLK => PRandom07:inst.clk
+BTN0 => inst5.IN0
+BTN1 => inst6.IN0
+HEX0_1 <= SevenSegmentInterfaceDEC:inst10.b
+HEX0_2 <= SevenSegmentInterfaceDEC:inst10.c
+HEX0_3 <= SevenSegmentInterfaceDEC:inst10.d
+HEX0_4 <= SevenSegmentInterfaceDEC:inst10.e
+HEX0_5 <= SevenSegmentInterfaceDEC:inst10.f
+HEX0_6 <= SevenSegmentInterfaceDEC:inst10.g
+HEX0_DP <= SevenSegmentInterfaceDEC:inst10.dp
+
+
+|DOMACI2|SevenSegmentInterfaceDEC:inst10
+x3 => Mux0.IN33
+x3 => Mux1.IN33
+x3 => Mux2.IN33
+x3 => Mux3.IN33
+x3 => Mux4.IN33
+x3 => Mux5.IN33
+x3 => Mux6.IN33
+x2 => Mux0.IN34
+x2 => Mux1.IN34
+x2 => Mux2.IN34
+x2 => Mux3.IN34
+x2 => Mux4.IN34
+x2 => Mux5.IN34
+x2 => Mux6.IN34
+x1 => Mux0.IN35
+x1 => Mux1.IN35
+x1 => Mux2.IN35
+x1 => Mux3.IN35
+x1 => Mux4.IN35
+x1 => Mux5.IN35
+x1 => Mux6.IN35
+x0 => Mux0.IN36
+x0 => Mux1.IN36
+x0 => Mux2.IN36
+x0 => Mux3.IN36
+x0 => Mux4.IN36
+x0 => Mux5.IN36
+x0 => Mux6.IN36
+dot => dp.IN0
+en => Mux0.IN32
+en => Mux1.IN32
+en => Mux2.IN32
+en => Mux3.IN32
+en => Mux4.IN32
+en => Mux5.IN32
+en => Mux6.IN32
+en => dp.IN1
+a <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+b <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+c <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+d <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+e <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+f <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+g <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+dp <= dp.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DOMACI2|PRandom07:inst
+z2 <= inst34.DB_MAX_OUTPUT_PORT_TYPE
+next => inst38.IN0
+next => inst7.IN0
+next => inst5.IN1
+next => inst18.IN1
+next => inst30.IN1
+next => inst52.IN1
+next => inst45.IN1
+next => inst65.IN0
+next => inst60.IN1
+rst => inst40.IN0
+rst => inst12.IN0
+rst => inst6.IN0
+rst => inst25.IN0
+rst => inst15.IN0
+rst => inst45.IN0
+rst => inst64.IN0
+clk => inst2.CLK
+clk => inst1.CLK
+clk => inst.CLK
+z1 <= inst43.DB_MAX_OUTPUT_PORT_TYPE
+z0 <= inst54.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DOMACI2|RisingEdge:inst3
+input => state[1].DATAIN
+output <= output.DB_MAX_OUTPUT_PORT_TYPE
+clk => state[0].CLK
+clk => state[1].CLK
+
+
+|DOMACI2|RisingEdge:inst4
+input => state[1].DATAIN
+output <= output.DB_MAX_OUTPUT_PORT_TYPE
+clk => state[0].CLK
+clk => state[1].CLK
+
+
